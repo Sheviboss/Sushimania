@@ -1,0 +1,16 @@
+.cart-empty {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+
+  button {
+    background-color: #bc002d;
+    border: 1px solid #bc002d;
+    border-radius: 25px;
+    color: #fff;
+    padding: 0 35px;
+    height: 38px;
+  }
+}

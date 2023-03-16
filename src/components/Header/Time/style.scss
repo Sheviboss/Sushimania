@@ -1,0 +1,14 @@
+.header-time {
+  padding-left: 30px;
+  color: var(--black-color);
+  background-image: url('../../../teampale/icon_time.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@media (max-width: 767px) {
+  .header-time {
+    display: none;
+  }
+}

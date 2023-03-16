@@ -1,0 +1,57 @@
+.cart {
+  .cart-tittle {
+    padding: 20px 0px;
+    color: var(--black-color);
+  }
+  .zakaz-price {
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 700;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 30px;
+    span {
+      color: var(--red-color);
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+  .zakaz-order {
+    margin-top: 30px;
+    padding: 0 35px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    background-color: #bc002d;
+    border: 1px solid #bc002d;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .zakaz-order-disabled {
+    margin-top: 30px;
+    padding: 0 35px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    border-color: silver;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart {
+    padding-bottom: 50px;
+
+    .cart-tittle {
+      padding-top: 22px;
+    }
+    .zakaz-price {
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      padding-top: 30px;
+    }
+  }
+}

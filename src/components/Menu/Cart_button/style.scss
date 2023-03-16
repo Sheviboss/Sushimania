@@ -1,0 +1,27 @@
+.cart_button {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 5px 15px 5px;
+  background-color: #bc002d;
+  border: 1px solid #bc002d;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+  span {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red-color);
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cart_button {
+    display: none;
+  }
+}

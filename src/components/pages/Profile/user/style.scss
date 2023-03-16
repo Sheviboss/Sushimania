@@ -1,0 +1,51 @@
+.user {
+  margin-top: 50px;
+  .user-info {
+    padding-bottom: 20px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    .user-img {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .user-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .user-name {
+        text-align: center;
+      }
+      .exit-button {
+        padding: 5px 15px;
+        border-color: #3c3c3c;
+        border-radius: 25px;
+        background-color: transparent;
+        font-size: 12px;
+      }
+    }
+  }
+  .history {
+    padding-top: 20px;
+
+    .history-wrapper {
+      padding-top: 20px;
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      .history-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .history-item_image {
+          img {
+            width: 100px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.burger {
+  cursor: pointer;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black-color);
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black-color);
+  transition: transform all 0.3s ease-in-out;
+}
+
+.burger::before {
+  top: 20%;
+}
+
+.burger::after {
+  bottom: 20%;
+}
+
+.burger--active {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-image: url('../../../teampale/icon-close.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+  .burger__line {
+    opacity: 0;
+    .burger::before,
+    .burger::after {
+      opacity: 0;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .submenu {
+    display: none;
+  }
+
+  .submenu-active {
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    left: -120px;
+    top: 10px;
+    transition: all 0.2s;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    li {
+      cursor: pointer;
+      padding: 4px 30px 8px 15px;
+      color: var(--black-color);
+      &:hover {
+        color: var(--red-color);
+      }
+    }
+    li:first-child {
+      padding-top: 15px;
+    }
+  }
+  .lk {
+    margin-left: 30px;
+    padding: 5px 15px;
+    border-color: #3c3c3c;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 12px;
+  }
+  .lk-active {
+    border: none;
+    background-color: transparent;
+  }
+}

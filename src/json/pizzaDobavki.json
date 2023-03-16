@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "бекон",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/e3f/gfq43x04iy99n37fcc5uz9t6h307sd5o.jpg.webp?16720405703360",
+    "price": 60
+  },
+  {
+    "id": 2,
+    "title": "ветчина",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/df2/3ge2lmjnm6ti3dje9w63nx1l46in08lh.jpg.webp?16720405703220",
+    "price": 50
+  },
+  {
+    "id": 3,
+    "title": "доп. соус для корочек",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/460/8nzdc9zce1dg9qdogsn0nv3c329u33s6.jpg.webp?16720405703346",
+    "price": 20
+  },
+  {
+    "id": 4,
+    "title": "корнишоны",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/7aa/msl1c71hrx2wa37em4cmsakcq5ooibpv.jpg.webp?16720405704116",
+    "price": 30
+  },
+  {
+    "id": 5,
+    "title": "курица гриль",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/4f4/02mfq8e7xrv98yg2mt77vyf4i70q7ehi.jpg.webp?16720414804510",
+    "price": 60
+  },
+  {
+    "id": 6,
+    "title": "маслины",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/3d2/ng36dv93ntvh15q3hliwzvjwg3wewgnc.jpg.webp?16720414803564",
+    "price": 30
+  },
+  {
+    "id": 7,
+    "title": "моцарелла",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/e29/lc874ozkd52wzys6l4i0nwdpas4ffyha.jpg.webp?16720405701084",
+    "price": 80
+  },
+  {
+    "id": 8,
+    "title": "перец Халапенью",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/7c0/m5dwuv4lffvkurz2hjvjwikl7u5ini02.jpg.webp?16720405702298",
+    "price": 30
+  },
+  {
+    "id": 9,
+    "title": "помидоры",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/079/pqo2nzjgp9bqbpt9comq58855ollb0q1.jpg.webp?16720414803370",
+    "price": 30
+  },
+  {
+    "id": 10,
+    "title": "свинина Барбекю",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/7ee/y6v39ntxxo4zs9rs023cywlxvcqhzba4.jpg.webp?16720414805224",
+    "price": 60
+  },
+  {
+    "id": 11,
+    "title": "сыр Чеддр",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/680/5rd503no7aqsm9mr6zf4ri0qk8lh731e.jpg.webp?16720414801722",
+    "price": 60
+  },
+  {
+    "id": 12,
+    "title": "шампиньоны жареные",
+    "imageUrl": "https://xn--80apboguo4b3d.xn--p1ai/upload/delight.webpconverter/upload/iblock/ea6/tgcw5k6gn9qlxf6rvy51kud41vjjb5k6.jpg.webp?16720414802702",
+    "price": 50
+  }
+]

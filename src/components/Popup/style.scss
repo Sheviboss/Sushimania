@@ -1,0 +1,275 @@
+.popup {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 25px;
+  max-width: 926px;
+  width: 94%;
+  max-height: 500px;
+  box-shadow: 2px 2px 2px 2500px rgba(0, 0, 0, 0.25);
+  .popup_wrapper {
+    display: flex;
+    .popup_image {
+      padding: 0px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 400px;
+        height: auto;
+        @media (min-width: 768px) and(max-width: 1024px) {
+          width: 333px;
+        }
+      }
+    }
+    .popup_right {
+      overflow-y: auto;
+      padding: 0px 30px 0px 0px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-height: 460px;
+      width: 100%;
+      margin: 34px 0px;
+    }
+    .popup_title {
+      font-size: 24px;
+      color: var(--black-color);
+    }
+    .popup_description {
+      padding-top: 30px;
+      color: #595959;
+      font-size: 14px;
+    }
+    .popup_weight {
+      padding-top: 30px;
+      font-size: 14px;
+      color: #595959;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      span {
+        padding-bottom: 8px;
+        color: var(--red-color);
+      }
+    }
+    .popup_dough {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-height: 105px;
+      gap: 10px;
+      padding-top: 30px;
+      font-size: 14px;
+      span {
+        color: var(--red-color);
+      }
+      .changeDough {
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 14px;
+        text-transform: lowercase;
+        border-radius: 30px;
+        border: 1px solid #3c3c3c;
+      }
+      .changeDough_active {
+        cursor: pointer;
+        color: #fff;
+        background-color: #bc002d;
+        border: 1px solid #bc002d;
+        border-radius: 30px;
+        padding: 5px 10px;
+        text-transform: lowercase;
+        font-size: 14px;
+      }
+      .popup_portions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .popoup_portions-value {
+          display: flex;
+          gap: 10px;
+          .changePortions_active {
+            background-color: var(--red-color);
+            border: 1px solid var(--red-color);
+            border-radius: 100%;
+            color: #fff;
+            padding: 5px 10px;
+          }
+          .changePortions {
+            background-color: #fff;
+            border: 1px solid var(--black-color);
+            padding: 5px 10px;
+            border-radius: 100%;
+            color: var(--black-color);
+          }
+        }
+      }
+    }
+    .popup_info {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      .popup_weight {
+        padding-top: 30px;
+        font-size: 14px;
+        color: #595959;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+          padding-bottom: 8px;
+          color: var(--red-color);
+        }
+      }
+      .popup_diameter {
+        padding-top: 30px;
+        font-size: 14px;
+        color: #595959;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+          padding-bottom: 8px;
+          color: var(--red-color);
+        }
+      }
+    }
+    .pizza-dobavki {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 100px;
+      .dobavki_item {
+        cursor: pointer;
+        position: relative;
+        box-shadow: 4px 4px 10px 0 #0000001a;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        max-width: 110px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        img {
+          max-width: 110px;
+          height: auto;
+        }
+        .dobavki_active {
+          cursor: pointer;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .dobavki_item_active {
+        cursor: pointer;
+        position: relative;
+        box-shadow: 4px 4px 10px 0 #0000001a;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        max-width: 110px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #bc002d;
+        img {
+          max-width: 110px;
+          height: auto;
+        }
+        .dobavki_active {
+          cursor: pointer;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .popup_close {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+    }
+    .popup_button {
+      position: absolute;
+      bottom: 25px;
+      right: 20px;
+      padding: 5px 35px;
+      background-color: #bc002d;
+      border: 1px solid #bc002d;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 16px;
+      padding-bottom: 14px;
+      padding-top: 14px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .popup {
+    overflow-y: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0px;
+    .popup_wrapper {
+      padding: 30px;
+      flex-direction: column;
+      .popup_image {
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .popup_right {
+        padding: 0;
+        max-height: max-content;
+        .pizza-dobavki {
+          justify-content: center;
+          flex-direction: row;
+        }
+      }
+      .popup_button {
+        position: sticky;
+        bottom: 55px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .popup {
+    .popup_wrapper {
+      .pizza-dobavki {
+        .dobavki_item {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}

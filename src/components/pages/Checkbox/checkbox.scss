@@ -1,0 +1,35 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  label {
+    color: var(--black-color);
+    font-size: 16px;
+  }
+  input {
+    width: 22px;
+    height: 22px;
+    border-radius: 20px;
+    border: 1px solid silver;
+    font-size: 13px;
+    padding-left: 12px;
+  }
+  input:checked {
+    position: relative;
+  }
+  input:checked::before {
+    content: url(../../../teampale/checkmark_icon_125020.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    border: 1px solid silver;
+    width: 21px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+  }
+}

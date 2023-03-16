@@ -1,0 +1,17 @@
+.slider-wrapper {
+  padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    height: 150px;
+    width: 100%;
+    .swiper-slide {
+      flex-shrink: 1;
+      img {
+        width: 380px;
+        height: 110px;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.tel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .tel-toggle {
+    cursor: pointer;
+    z-index: 99;
+    position: relative;
+    padding-left: 30px;
+    color: var(--black-color);
+    background-image: url('../../../teampale/icon_phone.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  .telephones-hide {
+    display: none;
+    li {
+      color: var(--black-color);
+      padding: 8px 0px;
+    }
+  }
+  .telephones {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    padding: 20px 10px 0px 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    li {
+      color: var(--black-color);
+      padding: 8px 0px;
+      cursor: pointer;
+      &:hover {
+        color: var(--red-color);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    margin-left: 10px;
+    color: transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-image: url('../../../teampale/icon_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.3s ease-in-out;
+  }
+  .button-active {
+    margin-left: 10px;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+    color: transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-image: url('../../../teampale/icon_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 767px) {
+  .tel {
+    display: none;
+  }
+}

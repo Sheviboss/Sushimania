@@ -1,0 +1,95 @@
+.categorys {
+  .categorys_inner {
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      padding-bottom: 8px;
+      color: var(--black-color);
+      font-size: 14px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-bottom: 4px solid transparent;
+      &:hover {
+        color: var(--red-color);
+        border-bottom: 4px solid var(--red-color);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    li:nth-child(n + 9) {
+      display: none;
+    }
+    .menu-toggle {
+      position: relative;
+      cursor: pointer;
+      text-transform: uppercase;
+      padding-bottom: 12px;
+      font-size: 14px;
+      color: var(--black-color);
+    }
+    .categorys_more {
+      display: none;
+    }
+    .categorys_more-active {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: block;
+      position: absolute;
+      top: 50px;
+      z-index: 10;
+      background-color: #fff;
+      border-radius: 25px;
+      li {
+        padding: 8px;
+        border-bottom: 1px dotted var(--black-color);
+        text-decoration: none;
+        text-transform: none;
+        &:hover {
+          color: var(--red-color);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .categorys {
+    overflow: hidden;
+    height: 80px;
+
+    .categorys::-webkit-scrollbar {
+      display: none;
+    }
+    .categorys_inner::-webkit-scrollbar {
+      display: none;
+    }
+    .categorys_inner {
+      gap: 10px;
+      -ms-overflow-style: none; /* IE и Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .categorys_inner {
+      overflow-x: scroll;
+      li {
+        padding: 5px 14px;
+        background-color: #efefef;
+        border-radius: 30px;
+        white-space: nowrap;
+        &:hover {
+          border: none;
+        }
+      }
+      li:nth-child(n + 9) {
+        display: block;
+      }
+      .menu-toggle {
+        display: none;
+      }
+    }
+  }
+}

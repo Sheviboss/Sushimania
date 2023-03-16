@@ -1,0 +1,266 @@
+.cart-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  .cart-item_inner {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cart-item_image {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        max-width: 160px;
+        height: auto;
+        border-radius: 15px;
+        //box-shadow: 0 4px 10px rgb(0 0 0 / 15);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .cart-item_info {
+      display: flex;
+      justify-content: space-between;
+      .cart-item_bout {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .cart-item_tittle {
+          color: var(--black-color);
+        }
+      }
+    }
+    .cart-item_info {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      .cart-item_count {
+        padding: 0 30px;
+        .cart-item_count_inner {
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 30px;
+          button {
+            border: none;
+            background-color: transparent;
+            width: 16px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: 0.75;
+          }
+        }
+      }
+      .cart-item_price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .cart-item_price_one {
+          font-size: 18px;
+          font-weight: 400;
+          text-align: center;
+          color: var(--black-color);
+        }
+        .cart-item_price_one_totalPrice {
+          font-size: 24px;
+          font-weight: 700;
+          color: var(--black-color);
+        }
+      }
+      .cart-item-delete {
+        border: none;
+        background-color: transparent;
+        border-radius: 25%;
+        svg {
+          &:hover {
+            fill: var(--red-color);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .change_sostav {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    background-color: transparent;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+.cart-item_tittle {
+  color: var(--black-color);
+  font-size: 24px;
+}
+.cart_item-_pizza-dough {
+  padding-top: 10px;
+  display: flex;
+  gap: 34px;
+  span {
+    font-weight: 700;
+    color: var(--red-color);
+    flex-shrink: 1;
+  }
+  div {
+    font-size: 14px;
+  }
+}
+.cart_item-_pizza-diameter {
+  padding-top: 10px;
+  display: flex;
+  gap: 13px;
+  span {
+    font-weight: 700;
+    color: var(--red-color);
+    flex-shrink: 1;
+  }
+  div {
+    font-size: 14px;
+  }
+}
+.cart-item_subtittle {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+
+  span {
+    font-weight: 700;
+    color: var(--red-color);
+    flex-shrink: 1;
+  }
+  .descr {
+    font-size: 14px;
+  }
+}
+.pizza-dobavki {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+  span {
+    font-weight: 700;
+    color: var(--red-color);
+  }
+  .dobavki {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart-item {
+    padding-top: 20px;
+    .cart-item_inner {
+      position: relative;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      .cart-item_info {
+        width: 100%;
+        .cart-item_count {
+          flex-shrink: 0;
+          padding: 30px 10px;
+        }
+        .cart-item_price {
+          flex-shrink: 0;
+        }
+        .cart-item-delete {
+          width: 100%;
+          flex-shrink: 1;
+        }
+        .cart-item_count_inner {
+          width: 85px;
+          justify-content: space-between;
+        }
+      }
+      .cart-item_image {
+        align-items: flex-start;
+        img {
+          max-width: 110px;
+          padding-top: 15px;
+        }
+        .cart-item_bout {
+          display: flex;
+          flex-direction: column;
+          .cart-item_tittle {
+            font-size: 18px;
+          }
+          .cart-item_subtittle {
+            display: block;
+            gap: 3px;
+          }
+        }
+      }
+    }
+  }
+  .cart_item-_pizza-dough {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 0;
+    span {
+      color: var(--red-color);
+      flex-shrink: 1;
+    }
+    div {
+      font-size: 14px;
+    }
+  }
+  .cart_item-_pizza-diameter {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 0;
+    span {
+      color: var(--red-color);
+      flex-shrink: 1;
+    }
+    div {
+      font-size: 14px;
+    }
+  }
+  .cart-item_subtittle {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 0;
+
+    span {
+      color: var(--red-color);
+      flex-shrink: 1;
+    }
+    .descr {
+      font-size: 14px;
+    }
+  }
+  .pizza-dobavki {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 0;
+    span {
+      color: var(--red-color);
+    }
+    .dobavki {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 541px) {
+  .cart-item {
+    .cart-item_inner {
+      padding: 30px 0;
+      .cart-item_image {
+        .cart-item_tittle {
+          font-size: 15px;
+        }
+        .cart-item_subtittle {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
